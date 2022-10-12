@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: #0000EE;
+}
+
+a:visited {
+    color: #0000EE;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #0a4573;
+    border-bottom: 1px solid #000;
+    position: fixed;
+    top: 0;
+    margin-bottom: 5px;
+}
+
+nav {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav .logo {
+    height: 50px;
+    width: 50px;
+    background-image: url('./images/cse-logo-color-gradient.png');
+    background-size: 100%;
+}
+
+nav .links {
+    margin-left: 10px;
+
+}
+
+nav .links a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 75px auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.index-container {
+    min-height: 250px;
+    width: 50%;
+    margin: 15px auto;
+}
+
+.index-container ul {
+    list-style-type: disc;
+    margin: 20px 50px;
+    line-height: 1.75em;
+    
+}
+
+.index-container ul li {
+    letter-spacing: 0.10rem;
+    text-decoration: none;
+}
+
+.index-container .sub-ul {
+    list-style-type: none;
+    margin: 5px 15px;
+    line-height: 1.25em;
+}
+
+main section {
+    width: 80%;
+    margin: 75px auto;
+    scroll-margin-top: 4rem;
+}
+
+main section p {
+    margin: 15px auto;
+    max-width: 60%;
+}
+
+main section .span-header {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+main section img {
+    max-width: 65%;
+    border: 1px #000 solid;
+    display: block;
+    margin: 5px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.img-container img {
+    min-width: 450px;
+    min-height: 250px;
+    margin: 5px auto;
+}
+
+.draw-container, .roof-export {
+    margin: 5px auto;
+    display: flex;
+    max-width: 60%;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+.draw-container img, .roof-export img {
+    max-width: 45%;
+    padding: 0 10px;
+    margin: 5px auto;
+}
+
+#roof-drawing {
+    scroll-margin-top: 4rem;
+}
+

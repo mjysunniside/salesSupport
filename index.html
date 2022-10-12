@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/cse-logo-color-gradient.png">
+    <link rel="stylesheet" href="home-style.css">
+    <title>Sales Support | Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="./NPA.html">NPA</a>
+                <a href="./permits.html">Permits</a>
+                <a href="./production.html">Production</a>
+            </div>
+        </nav>
+    </header>
+    <div class="top-set"><h1>Sales Support At California Solar Electric Co-op</h1></div>
+    
+    <section class="description">
+        <p>Sales Support is a role that is responsible for directly supporting the sales team at Cal Solar. You can expect to create reports and spreadsheets, use various software tools to design solar systems, and use the web to conduct any necessary research.</p>
+    </section>
+    <aside class="priority-header"><h2>Top Priorities</h2></aside>
+    <div class="priorities">
+        <div class="card">
+            <h2><a href="./NPA.html">New Project Analysis (NPAs)</a></h2>
+            <p>NPAs are reports created for potential new customers. These are requested by the sales team and it is sales support responsibility to complete within 2 days of request. These allow the sales team access to resources specific to the property before visiting the site.</p>
+        </div>
+        <div class="card">
+            <h2><a href="./permits.html">Permit Reports</a></h2>
+            <p>Permit reports are reports tracking permits for solar projects in our area of operation. These are large spreadsheets that allow us to track different metrics about solar projects and installers in our region.</p>
+        </div>
+        <div class="card">
+            <h2><a href="./production.html">Production Reports</a></h2>
+            <p>These are reports tracking the annual production for a system. These require the use of monitoring portals and allow us to confirm that our systems are performing adequately.</p>
+        </div>
+        <div class="card">
+            <h2><a href="./other.html">Team Requests</a></h2>
+            <p>The last but not least priotity is reponding to various team requests including true ups, tech or tool support, as well as revising any existing reports and resources.</p>
+        </div>
+        
+    </div>
+    <script>
+        let elements = document.querySelectorAll(".card")
+        
+        for(let el of elements) {
+            //el.addEventListener('click', cardClick)
+            let innerT = el.querySelector('h2').innerHTML
+            if(innerT.includes('NPA')) {
+                el.addEventListener('click', () => {
+                    window.location.href = './NPA.html'
+                })
+            } else if(innerT.includes('Permit')) {
+                el.addEventListener('click', () => {
+                    window.location.href = './permits.html'
+                })
+            } else if(innerT.includes('Production')) {
+                el.addEventListener('click', () => {
+                    window.location.href = './production.html'
+                })
+            } else if(innerT.includes('Team')) {
+                el.addEventListener('click', () => {
+                    window.location.href = './other.html'
+                })
+            }
+        }
+
+    </script>
+</body>
+</html>

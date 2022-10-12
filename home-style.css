@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #0a4573;
+    border-bottom: 1px solid #000;
+}
+
+nav {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav .logo {
+    height: 50px;
+    width: 50px;
+    background-image: url('./images/cse-logo-color-gradient.png');
+    background-size: 100%;
+}
+
+nav .links {
+    margin-left: 10px;
+
+}
+
+nav .links a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+}
+
+.top-set {
+    height: 80px;
+    width: 80%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.description {
+    width: 50%;
+    height: 70px;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.priority-header {
+    margin: 25px auto;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.priorities {
+    width: 60%;
+    height: 500px;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.card {
+    width: 80%;
+    max-width: 450px;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #0a4573;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card h2, a {
+    margin: 15px 15px;
+    padding-top: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card p {
+    margin: 5px 10px;
+}
